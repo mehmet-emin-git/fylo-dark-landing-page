@@ -279,10 +279,10 @@ header {
       }
 
       a {
-          background-image: url('./images/icon-arrow.svg');
-          background-repeat: no-repeat;
-          background-position: right center;
-          padding-right: 25px;
+        //   background-image: url('./images/icon-arrow.svg');
+        //   background-repeat: no-repeat;
+        //   background-position: right center;
+          padding-right: 3px;
           color: $cyan-cta;
           border-bottom: 1px solid $cyan-cta;
           transition: all 200ms ease-in-out;
@@ -291,6 +291,10 @@ header {
               color: #ffffff;
               border-bottom: 1px solid #ffffff;
           }
+      }
+
+      .arrow {
+          margin-bottom: -.3rem;
       }
   }
 }
