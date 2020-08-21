@@ -11,10 +11,7 @@ $footer-bg: hsl(216, 56%, 9%)
 $testimonial-bg: hsl(220, 30%, 18%)
 $cyan-cta: hsl(176, 68%, 64%)
 $blue-cta: hsl(198, 61%, 50%)
-
-// Borders
-$border-radius: 10px
-$border-radius-circle: 30px
+$feature-bg: #181f2b
 
 // ---------------------- Global Styles --------------------------------
 
@@ -24,7 +21,8 @@ $border-radius-circle: 30px
 body
     margin: 0
     font-family: $body
-    background: $main-bg
+    background: $intro-bg
+    color: white
 
 .flex-c
     display: flex
@@ -38,6 +36,112 @@ body
     align-items: center
 
 .container
-    max-width: 1200px
+    max-width: 1285px
     margin: 0 auto
 
+.container-sm
+    max-width: 70%
+    margin: 0 auto
+
+h1,h2,h3
+    font-family: $heading
+
+img
+    max-width: 100%
+
+.btn
+    background: linear-gradient(to right, $cyan-cta, $blue-cta)
+    padding: 1.1rem 6rem
+    font-family: $heading
+    font-weight: 700
+    font-size: 1rem
+    color: white
+    border: none
+    border-radius: 30px
+
+
+
+// -------------------- content style -----------------------------------
+header
+    padding: 4rem 0
+
+    .menu
+        a
+            text-decoration: none
+            color: white
+            display: inline-block
+            padding: 1rem
+
+            &:hover
+                text-decoration: underline
+
+        a:not(:last-child)
+            margin-right: 1.5rem
+
+// -------------------- Hero style -----------------------------------
+.hero
+    text-align: center
+
+    h1
+        font-size: 2.5rem
+        max-width: 700px
+        margin: 2rem auto
+        line-height: 1.5em
+    
+    p
+        font-size: 1.3rem
+        max-width: 650px
+        margin: 2rem auto
+        line-height: 1.5em
+
+// -------------------------- features style ---------------------------
+
+.features
+    background: $main-bg
+    position: relative
+    margin-top: 9rem
+
+    &::before
+        content: ""
+        display: inline-block
+        background: url("./images/bg-curvy-desktop.svg") no-repeat top / 100% 65%
+        position: absolute
+        width: 100%
+        height: 100%
+        top: -24rem
+        left: 0
+        z-index: -1
+        
+    .feature-grid
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr))
+        grid-template-rows: repeat(2,1fr)
+        justify-content: center
+        align-content: start
+        grid-gap: 5rem 3rem
+        text-align: center
+
+        .feature
+            padding: 1rem 2rem
+
+            h3
+                font-size: 1.2rem
+                margin: 2rem 0 .5rem 0
+                font-weight: 700
+
+            p
+                margin: 0
+                font-size: .9rem
+                padding: 0 1rem
+       
+.productive
+    background: $main-bg
+    padding-top: 5rem
+
+    &__text
+        max-width: 47%
+        padding: 1rem
+
+        h2
+            font-size: 2.7rem
+        
