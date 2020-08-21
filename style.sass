@@ -36,8 +36,9 @@ body
     align-items: center
 
 .container
-    max-width: 1285px
+    max-width: 1350px
     margin: 0 auto
+    padding: 0 1.5rem
 
 .container-sm
     max-width: 70%
@@ -48,6 +49,9 @@ h1,h2,h3
 
 img
     max-width: 100%
+
+a
+    text-decoration: none
 
 .btn
     background: linear-gradient(to right, $cyan-cta, $blue-cta)
@@ -67,7 +71,7 @@ header
 
     .menu
         a
-            text-decoration: none
+            @extend a
             color: white
             display: inline-block
             padding: 1rem
@@ -104,11 +108,11 @@ header
     &::before
         content: ""
         display: inline-block
-        background: url("./images/bg-curvy-desktop.svg") no-repeat top / 100% 65%
+        background: url("./images/bg-curvy-desktop.svg") no-repeat top / 100% 75%
         position: absolute
         width: 100%
         height: 100%
-        top: -24rem
+        top: -25rem
         left: 0
         z-index: -1
         
@@ -145,3 +149,72 @@ header
         h2
             font-size: 2.7rem
         
+        a
+            color: $cyan-cta
+            border-bottom: 1px solid $cyan-cta
+            padding: 0 1.3rem .3rem 0
+
+        .arrow
+            position: relative
+            top: .2rem
+            left: -.8rem
+
+            
+.quotes
+    background: $main-bg
+    padding: 9rem 0
+    
+    
+    .container
+        max-width: 84%
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr))
+        grid-gap: 2rem
+        position: relative
+        z-index: 2
+
+        &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            background: url("./images/bg-quotes.png") no-repeat top / 100% 100%
+            background-repeat: no-repeat
+            width: 3.2rem
+            height: 3rem
+            top: -2rem
+            left: 1rem
+            z-index: -1
+
+    .quote
+        padding: 1.5rem
+        background: lighten($intro-bg, 3%)
+        box-shadow: 5px 5px 15px rgba(black, .15)
+        border-radius: 5px
+
+        &__text
+            font-size: .9rem
+            margin-bottom: 1.5rem
+        
+        &__person
+            justify-content: flex-start
+
+        &__person-image
+            width: 1.5rem
+            height: 1.5rem
+
+            img
+                border-radius: 50%
+
+        .name
+            margin-left: .5rem
+
+            h5
+                margin: 0
+                font-size: .7rem
+
+            p
+                font-size: .6rem
+                margin: .2rem 0 0
+
+            
