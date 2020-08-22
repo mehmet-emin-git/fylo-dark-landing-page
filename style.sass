@@ -31,7 +31,6 @@ html
     justify-content: center
     align-items: center
 
-
 .flex-b
     display: flex
     justify-content: space-between
@@ -65,8 +64,6 @@ a
     color: white
     border: none
     border-radius: 30px
-
-
 
 // -------------------- content style -----------------------------------
 header
@@ -143,6 +140,8 @@ header
                 max-width: 400px
                 margin: 0 auto
        
+// -------------------------- productive style ---------------------------
+
 .productive
     background: $main-bg
     padding-top: 5rem
@@ -153,6 +152,7 @@ header
 
         h2
             font-size: 2.7rem
+            max-width: 360px
         
         a
             color: $cyan-cta
@@ -163,8 +163,10 @@ header
             position: relative
             top: .2rem
             left: -.8rem
-
             
+
+// -------------------------- Testimonial style ---------------------------
+
 .quotes
     background: $main-bg
     padding: 9rem 0
@@ -222,6 +224,9 @@ header
                 font-size: .6rem
                 margin: .2rem 0 0
 
+
+// -------------------------- Sign Up style ---------------------------
+
 .cta
     background: $main-bg
     .container-sm
@@ -264,6 +269,7 @@ header
             margin-left: 1.5rem
             font-size: .9rem
 
+// -------------------------- Footer style ---------------------------
 
 .footer
     background: $footer-bg
@@ -327,3 +333,186 @@ header
         a:not(:last-child)
             margin-right: .7rem
 
+@media (max-width: 768px)
+    .features
+        &::before
+            background: url("./images/bg-curvy-mobile.svg") no-repeat top / 100% 59%
+            top: -43rem
+
+    .productive
+        .container
+            flex-direction: column
+        
+        &__text
+            max-width: 90%
+            margin: 1.5rem auto 0 auto
+
+            h2
+                font-size: 1.9rem
+                max-width: 100%
+
+    .quotes
+        .container
+            max-width: 75%
+
+    .cta
+        .container-sm
+            max-width: 75%
+        
+        &__form
+            flex-direction: column
+
+        #email
+            width: 80%
+        
+        .btn-sm
+            width: 80%
+            padding: 1rem 2rem
+            margin-left: 0rem
+            margin-top: 1.5rem
+            font-size: .9rem
+
+    .footer
+        .grid
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            margin-top: 1.5rem
+
+        &__contact
+            font-size: 1rem
+            margin-top: 1.5rem
+
+        &__links1
+            margin-top: 4.5rem
+        
+        &__links2
+            margin-top: 2.5rem
+
+        &__social
+            margin-top: 4.5rem
+            width: 100%
+            justify-self: center
+
+            a
+                a:not(:last-child)
+                     margin-right: .9rem
+
+@media (max-width: 375px)
+    header
+        padding: 2rem 0
+
+        .logo
+            width: 6rem
+
+        .menu
+            a
+                font-size: .8rem
+                padding: .2rem
+
+            a:not(:last-child)
+                margin-right: 1rem
+    
+    .hero
+        h1
+            font-size: 1.6rem
+        p
+            font-size: 1rem
+
+    .features
+        margin-top: 7rem
+
+        .container-sm
+            max-width: 95%
+
+        &::before
+            background: url("./images/bg-curvy-mobile.svg") no-repeat top / 100% 21%
+            height: 50%
+            top: -30.5rem
+
+        &::after
+            content: ""
+            position: absolute
+            display: inline-block
+            background: $main-bg
+            width: 100%
+            height: 100%
+            top: -369px
+            left: 0
+            z-index: -1 
+            
+        .feature-grid
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr))
+            grid-gap: 3rem 0
+            text-align: center
+
+            .feature
+                padding: 1rem 1rem
+
+                p
+                    font-size: .9rem
+                    padding: .5rem 1rem 0 1rem
+
+    .productive
+        .container
+            flex-direction: column
+            padding: 0
+        
+        &__text
+            max-width: 95%
+            margin: 1.5rem auto 0 auto
+
+            h2
+                font-size: 1.2rem
+                max-width: 100%
+            
+            p
+                font-size: .9rem
+
+    .quotes
+        .container
+            max-width: 95%
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr))
+            grid-gap: 2rem 0
+
+        .quote
+            .name
+                h5
+                    font-size: .8rem
+    
+    .cta
+        .container-sm
+            max-width: 90%
+
+        &__block
+            padding: 1.7rem 1rem
+            top: 5rem
+
+            h2
+                font-size: 1.3rem
+
+            p
+                max-width: 98%
+                font-size: .95rem    
+                margin: 0 auto
+            
+            #email
+                width: 100%
+        
+            .btn-sm
+                width: 100%
+
+    .footer
+        background: $footer-bg
+        padding: 12rem 0 5rem 0
+
+        .container
+            max-width: 95%
+        
+        .location
+            .address-icon
+                margin-top: .3rem
+                width: 1.5rem
+            
+    
