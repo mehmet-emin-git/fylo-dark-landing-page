@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fylo Dark Landing Page</title>
+    <link
+    rel="stylesheet"
+    href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+    media="all"
+  />
     <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -155,40 +160,45 @@
     </section>
 
     <footer class="footer">
-        <div class="container flex">
-            <div class="description">
-                <img src="./images/logo.svg" alt="Fylo Logo" class="logo"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-            </div>
-             
+        <div class="container">
+            <img src="./images/logo.svg" alt="Fylo Logo" class="logo"/>
+            <div class="grid">
+
+                <div class="location">
+                    <span class="address-icon"><img src="./images/icon-location.svg" alt="location icon">
+                    </span>
+                    <span class="desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+                </div>
+                 
                 <div class="footer__contact">
                     <div class="footer__contact-phone">
-                        <img src="./images/icon-phone.svg" alt="phone icon">
-                        <span>+1-543-123-4567</span>
+                        <span><img src="./images/icon-phone.svg" alt="phone icon"></span>
+                        <span class="info">+1-543-123-4567</span>
                     </div>
                     <div class="footer__contact-email">
-                        <img src="./images/icon-email.svg" alt="email icon">
-                        <span>example@fylo.com</span>
+                        <span><img src="./images/icon-email.svg" alt="email icon"></span>
+                        <span class="info">example@fylo.com</span>
                     </div>
                 </div>
-                <div class="footer__links1">
+                <div class="footer__links1 flex-c">
                     <a href="#">About Us</a>
                     <a href="#">Jobs</a>
                     <a href="#">Press</a>
                     <a href="#">Blog</a>
                 </div>
-                <div class="footer__links2">            
+                <div class="footer__links2 flex-c">            
                     <a href="#">Contact Us</a>
                     <a href="#">Terms</a>
                     <a href="#">Privacy</a>
                 </div>
-                <div class="footer__social flex">
-                    <a href="#"><img src="./images/facebook-f.svg" alt="facebook icon"></a>
-                    <a href="#"><img src="./images/twitter.svg" alt="twitter icon"></a>
-                    <a href="#"><img src="./images/instagram.svg" alt="instagram icon"></a>
+                <div class="footer__social flex-c">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
+            </div>
+            
         </div>
-        <!-- <a href="#home" alt="go to top"><img src="./images/up-arrow.svg" alt="go to top" class="back-top"></a> -->
     </footer>
 
 </body>
